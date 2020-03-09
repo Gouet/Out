@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "584695216902",
+    "firebase_url": "https://outprojectdev.firebaseio.com",
+    "project_id": "outprojectdev",
+    "storage_bucket": "outprojectdev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:584695216902:android:4303b62f5d6c2b68eabc87",
+        "android_client_info": {
+          "package_name": "com.outproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "584695216902-7bdicei5uvs6mna6vq2auamtqh4c4jph.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSP8oRrPv-f5Il78K-ejIuJAQKZtZokQU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "584695216902-7bdicei5uvs6mna6vq2auamtqh4c4jph.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "584695216902-h0d4ojaim9e9o2eioq7srtr04dfjiqi2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.fenger.OutProject"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

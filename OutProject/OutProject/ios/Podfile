@@ -1,0 +1,75 @@
+platform :ios, '10.0'
+
+require_relative '../node_modules/react-native-unimodules/cocoapods'
+
+target 'OutProject' do
+
+  rnPrefix = "../node_modules/react-native"
+  
+  # React Native and its dependencies
+  pod 'FBLazyVector', :path => "#{rnPrefix}/Libraries/FBLazyVector"
+  pod 'FBReactNativeSpec', :path => "#{rnPrefix}/Libraries/FBReactNativeSpec"
+  pod 'RCTRequired', :path => "#{rnPrefix}/Libraries/RCTRequired"
+  pod 'RCTTypeSafety', :path => "#{rnPrefix}/Libraries/TypeSafety"
+  pod 'React', :path => "#{rnPrefix}/"
+  pod 'React-Core', :path => "#{rnPrefix}/"
+  pod 'React-CoreModules', :path => "#{rnPrefix}/React/CoreModules"
+  pod 'React-RCTActionSheet', :path => "#{rnPrefix}/Libraries/ActionSheetIOS"
+  pod 'React-RCTAnimation', :path => "#{rnPrefix}/Libraries/NativeAnimation"
+  pod 'React-RCTBlob', :path => "#{rnPrefix}/Libraries/Blob"
+  pod 'React-RCTImage', :path => "#{rnPrefix}/Libraries/Image"
+  pod 'React-RCTLinking', :path => "#{rnPrefix}/Libraries/LinkingIOS"
+  pod 'React-RCTNetwork', :path => "#{rnPrefix}/Libraries/Network"
+  pod 'React-RCTSettings', :path => "#{rnPrefix}/Libraries/Settings"
+  pod 'React-RCTText', :path => "#{rnPrefix}/Libraries/Text"
+  pod 'React-RCTVibration', :path => "#{rnPrefix}/Libraries/Vibration"
+  pod 'React-Core/RCTWebSocket', :path => "#{rnPrefix}/"
+  pod 'React-Core/DevSupport', :path => "#{rnPrefix}/"
+  pod 'React-cxxreact', :path => "#{rnPrefix}/ReactCommon/cxxreact"
+  pod 'React-jsi', :path => "#{rnPrefix}/ReactCommon/jsi"
+  pod 'React-jsiexecutor', :path => "#{rnPrefix}/ReactCommon/jsiexecutor"
+  pod 'React-jsinspector', :path => "#{rnPrefix}/ReactCommon/jsinspector"
+  pod 'ReactCommon/jscallinvoker', :path => "#{rnPrefix}/ReactCommon"
+  pod 'ReactCommon/turbomodule/core', :path => "#{rnPrefix}/ReactCommon"
+  pod 'Yoga', :path => "#{rnPrefix}/ReactCommon/yoga"
+  pod 'DoubleConversion', :podspec => "#{rnPrefix}/third-party-podspecs/DoubleConversion.podspec"
+  pod 'glog', :podspec => "#{rnPrefix}/third-party-podspecs/glog.podspec"
+  pod 'Folly', :podspec => "#{rnPrefix}/third-party-podspecs/Folly.podspec"
+
+  # Other native modules
+  pod 'RNGestureHandler', :podspec => '../node_modules/react-native-gesture-handler/RNGestureHandler.podspec'
+  pod 'RNReanimated', :podspec => '../node_modules/react-native-reanimated/RNReanimated.podspec'
+  pod 'RNScreens', :path => '../node_modules/react-native-screens'
+
+  #audio
+  #pod 'RNAudioRecorderPlayer', :path => '../node_modules/react-native-audio-recorder-player'
+  #pod 'react-native-ffmpeg/audio', :podspec => '../node_modules/react-native-ffmpeg/ios/react-native-ffmpeg.podspec'
+  #pod 'react-native-ffmpeg/audio', :podspec => '../node_modules/react-native-ffmpeg/ios/react-native-ffmpeg.podspec'
+  
+  pod 'rn-fetch-blob', :path => '../node_modules/rn-fetch-blob'
+  
+  # Firebase
+  pod 'RNFirebase', :path => '../node_modules/react-native-firebase/ios'
+  pod 'Firebase/Core', '~> 6.13.0'
+  pod 'Firebase/Database', '~> 6.13.0'
+  pod 'Firebase/Storage', '~> 6.13.0'
+  pod 'Firebase/Auth', '~> 6.13.0'
+  pod 'Firebase/Messaging', '~> 6.13.0'
+  
+  # Device info
+  pod 'RNDeviceInfo', :path => '../node_modules/react-native-device-info'
+  
+  #Image Picker
+  pod 'react-native-image-picker', :path => '../node_modules/react-native-image-picker'
+  
+  #Geoloc
+  pod 'react-native-geolocation', path: '../node_modules/@react-native-community/geolocation'
+  
+  #MAP
+  pod 'react-native-maps', path: '../node_modules/react-native-maps'
+  pod 'GoogleMaps'
+  pod 'Google-Maps-iOS-Utils'
+  
+  # Automatically detect installed unimodules
+  use_unimodules!
+end
